@@ -12,7 +12,7 @@
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
         <title>
-            Charity Options
+            Charity Options Page
         </title>
 
         <!-- Bootstrap core CSS -->
@@ -24,7 +24,7 @@
         <style type="text/css">
             body {
                 margin-top: 40px;
-                background-color: lavender;
+                background-color: #FFFFFF;
                 text-align: center;
             }
 
@@ -62,12 +62,13 @@
             #img-upload{
                 width: 100%;
             }
-            
-            h1{
-                margin-bottom: 35px;
+
+             h1{
+                margin-top: 70px;
+                margin-bottom: 30px;
             }
-            
-            
+
+
         </style>
 
         <script>
@@ -111,83 +112,111 @@
 
     <body>
 
+       <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">BackStash</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+
+                        <a href="index.html" class="btn btn-outline-danger my-2 my-sm-0" >Logout</a>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
         <main role="main" class="inner cover">
             
-                <h1 class="cover-heading">
-                    Options
-                </h1>
-                
-                <div class="form-group">
-                    <div class="container">
-                        <div class="row">
-                            <div class = "col-md-3"></div>
-                            <div class = "col-md-6">   
-                                <div class="form-group">
-                                    <label>Change Profile Picture</label>
-                                    <span class="input-group-btn">
-                                        <span class="btn btn-default btn-file">
-                                            Browse… <input type="file" id="imgInp">
+            <div class = "container">
+                <main role="main" class="inner cover">
+                    <h1 class="cover-heading">Options</h1>
+
+                    <div class="form-group">
+                        <div class="container">
+                            <div class="row">
+                                <div class = "col-md-3"></div>
+                                <div class = "col-md-6">   
+                                    <div class="form-group">
+                                        <label>Change Profile Picture</label>
+                                        <span class="input-group-btn">
+                                            <span class="btn btn-default btn-file">
+                                                Browse… <input type="file" id="imgInp">
+                                            </span>
                                         </span>
-                                    </span>
-                                    <img id='img-upload'/>
+                                        <img id='img-upload'/>
+                                    </div>
                                 </div>
+                                <div class = "col-md-3"></div>
                             </div>
-                            <div class = "col-md-3"></div>
                         </div>
+
+                        <div class = "container">
+                            <p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormName">Name</label>
+                                    <input type="email" class="form-control" id="name" placeholder="Sherwyn Sen">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormDescription">Description</label>
+                                    <textarea class="form-control" id="exampleFormDescription" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormLink">Link</label>
+                                    <input type="link" class="form-control" id="link">
+                                </div>
+
+                            </form>
+                            </p>
                     </div>
+
 
                     <div class = "container">
                         <p>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormName">Name</label>
-                                <input type="email" class="form-control" id="name" placeholder="Sherwyn Sen">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleFormDescription">Description</label>
-                                <textarea class="form-control" id="exampleFormDescription" rows="3"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleFormLink">Link</label>
-                                <input type="link" class="form-control" id="link">
-                            </div>
-
-                        </form>
+                            <button type = "button" class = "btn btn-outline-dark">
+                                Stripe Connect
+                            </button>
                         </p>
+                    </div>
+                    </div>
+
+
+                </main>
+
+
+
+            <button type = "button" class = "btn btn-lg btn-primary">Submit</button>
+
+
+
+            <footer class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img src="logo.png" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></img>
+                    <small class="float-right"><a href="#">Back to top</a></small>
+                    <small>&copy; 2018 BackStash, Inc. </small>
                 </div>
 
-
-                <div class = "container">
-                    <p>
-                        <button type = "button" class = "btn btn-outline-dark">
-                            Stripe Connect
-                        </button>
-                    </p>
                 </div>
-            </div>
-            
-
-        </main>
+            </footer>
 
 
-
-    <button type = "button" class = "btn btn-lg btn-primary">Submit</button>
-
-
-
-    <footer class="mastfoot mt-auto">
-    </footer>
-
-
-
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../../../dist/js/bootstrap.min.js"></script>
     </body>
 </html>

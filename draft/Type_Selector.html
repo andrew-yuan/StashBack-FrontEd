@@ -34,37 +34,88 @@
         </style>
     </head>
 
+
+
     <body>
 
-        <main role="main" class="inner cover">
-            <h1 class="cover-heading">Are you a...</h1>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">BackStash</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
 
-            <div class = "container">
-                <p class = "lead">
-                <div class = "btn-toolbar"> 
-                    <a href="Donator_Index.html" class="btn btn-block btn-md btn-primary ">Donator</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
 
-                    <a href="Charity_Index.html" class="btn btn-block btn-md btn-danger">Charitable Organization</a>
+                        <a href="Type_Selector.html" class="btn btn-outline-success my-2 my-sm-0" >Login</a>
+                    </form>
                 </div>
+            </nav>
+        </header>
+
+        <main role="main" class="inner cover">
+
+            <div class = "row">
+                <div class = "col-md-6">
+                    <a href = "Charity_Index.html" title = "charity">
+                        <img class="img-responsive" src="charity.jpg" alt = "charity picture">
+                    </a> 
+                </div>
+
+                <div class = "col-md-6">
+                    <a href = "Donator_Index.html" title = "donator">
+                        <img class="img-responsive" src="donator.jpg" alt = "donator picture">
+                    </a>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <div class="container">
+                <div>
+                    <h2>Choose your affiliation.</h2>
+                </div>
+                
+                <p>
+                    Make sure your money goes to the right places whether that be for your favorite charity organization or back to your own pocket based on your month-to-month financial situation.
                 </p>
+                
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            
+
+
+
+
+        </main>
+
+        <footer class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="logo.png" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></img>
+                <small class="float-right"><a href="#">Back to top</a></small>
+                <small>&copy; 2018 BackStash, Inc. </small>
+            </div>
 
             </div>
-        </div>
-
-
-    </main>
-
-<footer class="mastfoot mt-auto">
-</footer>
+        </footer>
 
 
 
-<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../../../assets/js/vendor/popper.min.js"></script>
-<script src="../../../../dist/js/bootstrap.min.js"></script>
-</body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    </body>
 </html>

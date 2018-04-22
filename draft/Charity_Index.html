@@ -36,79 +36,114 @@
 
     <body>
 
-        <main role="main" class="inner cover">
-            <h1 class="cover-heading">Welcome Back Charity Org!</h1>
-            <div class = "container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">BackStash</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
 
-                <p>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Charity_Options.html">Options</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
 
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col">
-                            <img src="EJI.jpg" class="rounded-circle" alt="Charity Profile Picture">
-                        </div>
-
-                        <div class = "col">
-                            <div class = "btn-toolbar"> 
-                                <a href="Charity_Options.html" class="btn btn-block btn-lg btn-dark">Options</a>
-
-                            </div>
-
-                            <div>
-                                <h2 class="text-center"> Donators: 25</h2>
-                            </div>
-                        </div>
-                    </div>
+                        <a class= "btn btn-outline-danger my-2 my-sm-0" href ="index.html">Logout</a>
+                    </form>
                 </div>
-                </p>
+            </nav>
+        </header>
 
-            <div class = "container">
-                <div class = "jumbotron">
-                    <div class = "row">
-
-                        <div class ="col-9">
-
-                            <h1>Balance: $436.10</h1>
-
-                            <h5> <small> Last updated 4/21/18 </small> </h5>
-
-                        </div>
-
-                        <div class ="col-3">
-                            <div class = "btn-toolbar"> 
-                                <button name = "refresh" class="btn btn-block btn-md btn-success ">Refresh</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+            <div class="col-md- p-md-3 mx-auto my-3">
+                <h2 class="display-10 font-weight-normal">Welcome Back: Equal Justice Initiative</h2>
 
             </div>
 
-            <a href = "/Type_Selector.html" name = "logout" class = "btn btn-lg btn-light">Logout</a>
+        </div>
 
+        <hr class="featurette-divider">
+
+        <div class = "row">
+            <div class = "col">
+                <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5 text-white">Current Balance:</h2>
+                        <p class="lead"></p>
+                    </div>
+                    <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title text-black">$436.10 </h1>
+
+                            <div class = "container">
+                                <p>
+                                <div class = "btn-toolbar"> 
+                                    <button name = "refresh" class="btn btn-lg btn-block btn-success float-right">Refresh</button>
+                                </div>
+                                </p>
+
+
+                            <h5> <small class = "float-right"> Last updated: 4/21/18 </small> </h5>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
+        </div>
+
+        <div class = "col">
+
+            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+
+                    <h2 class="display-5">Donators: 25</h2>
+                    <p class="lead"></p>
+                </div>
+                <div class="bg-dark box-shadow mx-auto text-white" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <div class="card-body">
+                        <p>
+                            <img src="EJI.jpg" type = "rounded-image" alt="EJI logo" width = "200" height = "200">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
 
 
 
 
 
-        </main>
+    </main>
 
-    <footer class="mastfoot mt-auto">
-    </footer>
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <img src="logo.png" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></img>
+        <small class="float-right"><a href="#">Back to top</a></small>
+        <small>&copy; 2018 BackStash, Inc. </small>
+    </div>
+
+    </div>
+</footer>
 
 
 
-    <!-- Bootstrap core JavaScript
+<!-- Bootstrap core JavaScript
 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    </body>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+</body>
 </html>
