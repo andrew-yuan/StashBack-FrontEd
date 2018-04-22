@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -9,7 +8,7 @@
         <link rel="icon" href="../../../../favicon.ico">
 
         <title>
-            Charity Index Page
+            Type Selector Page
         </title>
 
         <!-- Bootstrap core CSS -->
@@ -21,7 +20,7 @@
         <style type="text/css">
             body {
                 margin-top: 40px;
-                background-color: #FFFFFF;
+                background-color: lavender;
                 text-align: center;
             }
 
@@ -31,72 +30,57 @@
                 align-content: center;
                 display:inline-block;
             }
+
+            input[type = "radio"] {
+                margin-right: 0;
+            }
         </style>
     </head>
 
     <body>
 
         <main role="main" class="inner cover">
-            <h1 class="cover-heading">Welcome Back Charity Org!</h1>
-            <div class = "container">
-
-                <p>
+            <div>
+                <h1 class="cover-heading">
+                    Options
+                </h1>
 
                 <div class = "container">
+                    <p>
                     <div class = "row">
-                        <div class = "col">
-                            <img src="EJI.jpg" class="rounded-circle" alt="Charity Profile Picture">
-                        </div>
+                        <div class ="col">
+                            <h6> Change round-up amount:</h6>
+                       
+                        <form>
+                            <label class="radio-inline">
+                                <input type="radio" name="RoundUpAmt">0.5 
+                            </label>
 
-                        <div class = "col">
-                            <div class = "btn-toolbar"> 
-                                <a href="Charity_Options.html" class="btn btn-block btn-lg btn-dark">Options</a>
-
-                            </div>
-
-                            <div>
-                                <h2 class="text-center"> Donators: 25</h2>
-                            </div>
-                        </div>
+                            <label class="radio-inline">
+                                <input type="radio" name="RoundUpAmt">1.0 
+                            </label>
+                        </form>
+ </div>
                     </div>
-                </div>
-                </p>
+                    </p>
+            </div>
+
 
             <div class = "container">
-                <div class = "jumbotron">
-                    <div class = "row">
-
-                        <div class ="col-9">
-
-                            <h1>Balance: $436.10</h1>
-
-                            <h5> <small> Last updated 4/21/18 </small> </h5>
-
-                        </div>
-
-                        <div class ="col-3">
-                            <div class = "btn-toolbar"> 
-                                <button name = "refresh" class="btn btn-block btn-md btn-success ">Refresh</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <p>
+                    <button type = "button" class = "btn btn-outline-dark">
+                        Stripe Connect
+                    </button>
+                </p>
             </div>
-
-            <a href = "/Type_Selector.html" name = "logout" class = "btn btn-lg btn-light">Logout</a>
-
             </div>
-
-
-
-
-
-
-
         </main>
+
+
+
+    <button type = "button" class = "btn btn-lg btn-primary">Submit</button>
+
+
 
     <footer class="mastfoot mt-auto">
     </footer>
